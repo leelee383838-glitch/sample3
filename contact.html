@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact | BLUE COMMUNICATIONS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+  <header class="hd">
+    <div class="w hd-inner">
+      <a href="./index.html" class="logo">
+        <span class="logo-text">BLUE COMMUNICATIONS</span>
+      </a>
+      <button class="mob-toggle" onclick="this.classList.toggle('open');document.querySelector('.nav').classList.toggle('open')"><span></span><span></span></button>
+      <nav class="nav">
+        <a href="./index.html#about">ABOUT US</a>
+        <a href="./index.html#services">CUSTOM MKT</a>
+        <a href="./services.html">SERVICES</a>
+        <a href="./portfolio.html">PORTFOLIO</a>
+        <a href="./contact.html" class="nav-cta">CONTACT</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="sc sc--alt">
+    <div class="w">
+      <div class="sc-head">
+        <p class="sc-kicker">Contact</p>
+        <h1 class="sc-title" style="font-size:inherit">빠른 상담을 <span class="hl">받아보세요.</span></h1>
+        <p class="sc-desc">
+          아래 정보를 남겨주시면 담당 매니저가 1영업일 이내에 연락드립니다.
+          예산이 크지 않아도 괜찮습니다. 우리 브랜드에 맞는 현실적인 전략부터 함께 그려봅니다.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sc">
+    <div class="w">
+      <div class="contact-wrap">
+        <form class="form" onsubmit="return false">
+          <label for="name">이름</label>
+          <input id="name" type="text" placeholder="담당자 이름을 입력해주세요." />
+
+          <label for="phone">전화번호</label>
+          <input id="phone" type="tel" placeholder="숫자만 입력해주세요." />
+
+          <label for="email">이메일</label>
+          <input id="email" type="email" placeholder="연락받으실 이메일을 입력해주세요." />
+
+          <label for="budget">집행예산</label>
+          <select id="budget">
+            <option value="">집행예산을 선택해주세요</option>
+            <option>500만원 미만</option>
+            <option>500~1000만원</option>
+            <option>1000~3000만원</option>
+            <option>3000만원 이상</option>
+          </select>
+
+          <label for="industry">업종</label>
+          <input id="industry" type="text" placeholder="예: 병의원, 프랜차이즈, B2B SaaS 등" />
+
+          <label for="msg">문의 내용</label>
+          <textarea id="msg" rows="4" placeholder="현재 상황과 목표를 간단히 적어주세요."></textarea>
+
+          <div class="form-check"><input type="checkbox" /><span>개인정보 수집·이용 동의 (필수)</span></div>
+          <div class="form-check"><input type="checkbox" /><span>마케팅 활용 및 수신 동의 (선택)</span></div>
+
+          <button type="submit" class="btn-p form-submit" disabled>상담 신청하기 (데모 폼)</button>
+          <p class="form-note">* 이 폼은 데모용으로 동작하지 않으며, 실제 홈페이지에서는 전송 기능을 연동해 사용하실 수 있습니다.</p>
+        </form>
+
+        <div class="side-cards">
+          <div class="cd"><h3>Contact</h3><p>Tel 1877-7522</p><p>E-mail shpark@blue-comms.co.kr</p></div>
+          <div class="cd"><h3>Address</h3><p>경기 의정부시 신흥로 126, 새누리빌딩 2층 201호</p></div>
+          <div class="cd"><h3>Working Style</h3><p>이메일/전화/미팅 중 편하신 방식으로 논의 가능합니다.</p></div>
+          <div class="cd">
+            <h3>이런 브랜드와 잘 맞습니다</h3>
+            <p>— 광고는 집행 중이지만, 랜딩과 구조를 함께 점검하고 싶은 경우</p>
+            <p>— 병의원·프랜차이즈처럼 규제와 심의를 고려해야 하는 업종</p>
+            <p>— 단기 캠페인이 아닌, 장기적인 성장 파트너를 찾고 있는 팀</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sc sc--alt">
+    <div class="w">
+      <div class="sc-head sc-head--center">
+        <p class="sc-kicker">FAQ</p>
+        <h2 class="sc-title">자주 받는 <span class="hl">질문</span></h2>
+      </div>
+      <div class="g3">
+        <div class="faq-item"><h3>Q. 예산이 많지 않아도 상담이 가능한가요?</h3><p>네, 가능합니다. 500만 원 미만의 테스트 예산으로 시작해, 어떤 구조가 가장 효율적인지부터 함께 검증합니다.</p></div>
+        <div class="faq-item"><h3>Q. 어느 정도 기간을 보고 함께 일하는 게 좋을까요?</h3><p>대부분의 브랜드는 최소 3~6개월을 기준으로 구조를 설계합니다. 한 달 단위 성과도 보되, 장기 성장 곡선을 함께 보는 것을 권장합니다.</p></div>
+        <div class="faq-item"><h3>Q. 실제 포트폴리오는 어디에서 볼 수 있나요?</h3><p>보안과 계약상 이유로, 상세 수치는 비공개로 운영됩니다. 미팅을 요청해 주시면 업종이 비슷한 케이스를 중심으로 개별 공유해드립니다.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="ft">
+    <div class="w ft-inner">
+      <span>주식회사 BLUE COMMUNICATIONS · 대표자 이봉재</span>
+      <span>경기 의정부시 신흥로 126, 새누리빌딩 2층 201호 · Tel 1877-7522</span>
+      <span>COPYRIGHTⓒ BLUE COMMUNICATIONS. All rights reserved.</span>
+    </div>
+  </footer>
+
+</body>
+</html>
