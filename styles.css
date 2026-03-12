@@ -402,14 +402,30 @@ ul,ol{list-style:none}
   padding-bottom:0;
   box-shadow:none;
 }
-.hero-visual-copy.w{max-width:none;margin:0}
+/* About Us와 동일한 뎁스: 1440px 컬럼과 같은 시작 위치 */
+.hero-visual-copy.w{
+  padding-left:max(48px,calc((100% - 1440px) / 2 + 48px));
+  padding-right:max(48px,calc((100% - 1440px) / 2 + 48px));
+  max-width:none;
+  margin:0;
+  width:100%;
+  box-sizing:border-box;
+}
 .hero-visual-copy .sc-head{text-align:left;margin-bottom:0}
-.hero-visual-copy .sc-kicker{margin-bottom:14px;color:#0369a1}
-.hero-visual-copy .sc-title{color:#0f172a;text-shadow:none}
-.hero-visual-copy .hero-desc{color:#1e293b;text-shadow:none}
+.hero-visual-copy .sc-kicker{margin-bottom:14px;color:#0369a1;font-size:18px}
+.hero-visual-copy .sc-title{color:#0f172a;text-shadow:none;font-size:53px}
+.hero-visual-copy .hero-desc{color:#1e293b;text-shadow:none;font-size:26px}
+.hero-visual-copy .hero-actions .btn-p{font-size:16px;padding:14px 30px}
+.hero-visual-copy .hero-actions .btn-g{font-size:14px;padding:12px 26px}
+@media(min-width:1200px){
+  .hero-visual-copy .sc-title{font-size:76px}
+}
 @media(max-width:767px){
   .hero-visual .img-fade-wrap{height:calc(60vh + 64px);min-height:calc(60vh + 64px)}
   .hero-visual-copy{padding:0 20px;padding-top:max(14vh,72px)}
+  .hero-visual-copy.w{padding-left:20px;padding-right:20px}
+  .hero-visual-copy .sc-title{font-size:50px}
+  .hero-visual-copy .hero-desc{font-size:22px}
 }
 .hero-visual .img-fade-top,
 .hero-visual .img-fade-bottom{z-index:2}
