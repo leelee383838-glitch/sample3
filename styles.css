@@ -412,20 +412,24 @@ ul,ol{list-style:none}
   box-sizing:border-box;
 }
 .hero-visual-copy .sc-head{text-align:left;margin-bottom:0}
-.hero-visual-copy .sc-kicker{margin-bottom:14px;color:#0369a1;font-size:18px}
-.hero-visual-copy .sc-title{color:#0f172a;text-shadow:none;font-size:53px}
-.hero-visual-copy .hero-desc{color:#1e293b;text-shadow:none;font-size:26px}
-.hero-visual-copy .hero-actions .btn-p{font-size:16px;padding:14px 30px}
-.hero-visual-copy .hero-actions .btn-g{font-size:14px;padding:12px 26px}
-@media(min-width:1200px){
-  .hero-visual-copy .sc-title{font-size:76px}
+.hero-visual-copy .sc-kicker{margin-bottom:14px;color:#0369a1;font-size:clamp(14px,1.4vw,18px)}
+.hero-visual-copy .sc-title{color:#0f172a;text-shadow:none;font-size:clamp(38px,4.2vw,58px);line-height:1.2}
+.hero-visual-copy .hero-desc{color:#1e293b;text-shadow:none;font-size:clamp(17px,1.7vw,24px)}
+.hero-visual-copy .hero-actions .btn-p{font-size:clamp(13px,1.1vw,16px);padding:clamp(11px,1.2vw,14px) clamp(22px,2vw,30px)}
+.hero-visual-copy .hero-actions .btn-g{font-size:clamp(12px,1vw,14px);padding:clamp(10px,1vw,12px) clamp(20px,1.8vw,26px)}
+@media(min-width:1600px){
+  .hero-visual-copy .sc-kicker{font-size:18px}
+  .hero-visual-copy .sc-title{font-size:72px}
+  .hero-visual-copy .hero-desc{font-size:26px}
+  .hero-visual-copy .hero-actions .btn-p{font-size:16px;padding:14px 30px}
+  .hero-visual-copy .hero-actions .btn-g{font-size:14px;padding:12px 26px}
 }
 @media(max-width:767px){
   .hero-visual .img-fade-wrap{height:calc(60vh + 64px);min-height:calc(60vh + 64px)}
   .hero-visual-copy{padding:0 20px;padding-top:max(14vh,72px)}
   .hero-visual-copy.w{padding-left:20px;padding-right:20px}
-  .hero-visual-copy .sc-title{font-size:50px}
-  .hero-visual-copy .hero-desc{font-size:22px}
+  .hero-visual-copy .sc-title{font-size:clamp(36px,8vw,44px)}
+  .hero-visual-copy .hero-desc{font-size:18px}
 }
 .hero-visual .img-fade-top,
 .hero-visual .img-fade-bottom{z-index:2}
